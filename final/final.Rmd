@@ -1,7 +1,7 @@
 ---
-title: "Çalışmanızın Başlığı"
+title: "Yıllık Gelirdeki Farklılıklara Sebep Olan Faktörler"
 author: 
-  - İsim Soyisim[^1]
+  - Başak Aydın[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa-tr.csl
 header-includes:
@@ -34,56 +34,56 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: Öğrenci Numarası, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+[^1]: 21080560, [Github Repo](https://github.com/basakaaydin/finalodevii)
 
-# Final Hakkında Önemli Bilgiler
-
-\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
-
-**Proje gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
-
-**Proje klasörünüzü sıkıştırdıktan sonra (`OgrenciNumarasi.zip` dosyası) 9 Haziran 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
-
-\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
 # Giriş
-Bu taslak size proje ödevinizi yazarken yardımcı olması amacıyla oluşturulmuştur. Ödevlerinizde, makalelerinizde, sunumlarınızda ve projelerinizde kullandığınız tüm bilgi kaynaklarına atıfta bulunmalısınız. Alıntı ve gönderme yapmak okuyuculara çalışmanızda kullandığınız/başvurduğunuz  kaynaklara ulaşma imkanı sağlar. **Her ne kadar kendi sözlerinizi kullanıyor olsanız da, başkalarına ait fikirleri çalışmanızda aktarıyorsanız bu fikirlerin kaynağını belgelemek zorundasınız. Aksi takdirde akademik intihal yapmış olursunuz.** Yazım konusunda @aydinonat:2007'ye başvurabilirsiniz. 
+Yapmış olduğum bu çalışmada araştırma sorum yıllık gelirdeki değişimleri etkileyen faktörler nelerdir sorusuna dayanmaktadır.Bu sorudan yola çıkarak elde ettiğim sonuçların gelir üzerindeki etkisini incelemek ve veriyi analiz etmek projemin konusunu oluşturmaktadır.Araştırmama dair kullandığım veri setini UCI Machine Learning Repository sitesi üzerinden aldım.Bu veri seti nüfus sayımı verilerine dayanarak yıllık gelirin 50.000$'ı aşıp aşmadığını incelemektedir.Veri setim toplam 14 değişken ve 48.842 gözlem içermektedir.Değişkenler age,workclass,fnlwgt,education,education-num,marital-status,occupation,relationship,race,sex,capital gain,capital loss,hours per week,native country'den oluşmaktadır. 
 
-
-Proje ödevinizde yer alan başlıkların bu metinde yer alan başlıkları kesinlikle içermesi gerekmektedir. Burada kullanılan başlıklar haricinde farklı alt başlıklar da kullanabilirsiniz. Projenizi yazarken bu dosyayı taslak olarak kullanıp içeriğini projenize uyarlayınız.
 
 ## Çalışmanın Amacı
-Bu bölümde yaptığınız çalışmanın amacından ve öneminden birkaç paragraf ile bahsediniz.
-
+Bu araştırmada yaş,etnik grup,cinsiyet,eğitim,medeni hali gibi değişkenlerine göre gelirin farklılık gösterip göstermediği incelenmiştir.
+ 
+ Birçok ülke,kurum ve kuruluşlar iş dünyasında ayrım yapmaksızın fırsat eşitliğine yönelik çeşitli hükümlerde bulunsa da iş hayatında dolayısıyla ücretlerde çok bariz farklılıklar bulunmaktadır.
+ 
+ Bu farklılıkların hangi değişkenlerden kaynaklandığını tespit ederek,yorumlayıp,bir bakış açısı oluşturup,çözümler sunabilmek bu çalışmanın amacıdır.
 ## Literatür 
+İş gücü piyasasında cinsiyet,etnik köken,ırk,yaş,din gibi birçok faktörlerden kaynaklanan ayrımcılığın ABD,Çin,Güney Kore ve bunun gibi birçok güçlü devletlerde bariz bir sorun olduğunu görüyoruz.Ayrımcılık özellikle iş ortamında ücret,iş alma ve terfi konularında yoğunlaşıyor.Bu tarz ayrımcılıklar işgücü piyasalarının gelişimini ve işleyişini aynı zamanda geliri etkileyen en temel sorunlardan birisidir.Kişisel ücret farklılıklarında aynı birimde çalışan işçilerin yaş ve cinsiyetine göre çok büyük faklılıkların olduğu bariz.Eşit işe eşit ücret sağlanması gerektiği halde bu göz ardı ediliyor.Bunun en iyi örneği kadın işçiye aynı işi yapması için erkek işçiden daha az ücret ödenmesi durumudur.Toplumsal cinsiyet eşitsizliği ya da bir başka deyişle cinsiyete dayalı işbölümü temelinde kadınlar erkekler ile aynı eğitim düzeyine ve mesleki kıdeme sahip olsalar bile sadece kadın olmalarından kaynaklı cinsiyetçi ücret ayrımına maruz kalmaktadır.Bunu yıllık gelire vurduğumuzda kadınlardaki yıllık gelir erkeklerdekine göre daha düşük bir meblağ olarak istatistiklere yansıyor. @seher2016icsgucu
+ 
+ İş gücü piyasasında cinsiyet dışında medeni durum,yaş,eğitim düzeyi,mesleki tecrübe ve verimlilik gibi iş gücünün özelliğinden kaynaklanan ücret/gelir farklılıkları da bulunmaktadır.Sektör özellikleri ve bölgeler arası ücret farklılıklarından kaynaklanan yıllık gelir farklılıkları da bulunmaktadır.İşgücü piyasalarında işleri ve ücretleri farklılaştıran bir başka unsur da firma ölçeğidir. Hemen her yerde ve zamanda gözlenen bir durum büyük firmalarda ücretlerin küçük firmalara oranla daha yüksek olmasıdır. Büyük firmalarda ücretlerin yüksek olması işleri birbirinden heterojen kılarak ücretlerin farklılaşmasına yol açar.  @maktav2019icsgucu
+ 
+ Etkin Ücret Teorisine göre işçiyi denetlemenin ve performansını ölçmenin zor olduğu, işçinin hatalı üretim yapmasının maliyetli olduğu, işin belirli bir süre spesifik işyerinde eğitim gerektirdiği durumlarda işverenlerin istekli olarak piyasa denge ücretinin üstünde ücret (etkin ücret ödemesi) verdikleri söylenebilir. Etkin ücret ödemelerinin işleri birbirinden farklı (heterojen) hale getirerek emek piyasalarında ücret farklılıklarına neden olabileceğini belirtmek gerekir. Benzeri özelliklere sahip iki işçiden birisi etkin ücret uygulamasının yapıldığı firma veya işkolunda çalışıyorsa diğerinden daha yüksek ücret alabilmektedir. @blackaby1991industry
+ Bir diğer gelirdeki farklılıkların nedeni ise ırktır.Siyah ve beyaz ayrımı geçmişten bugüne devam eden bir sorundur.Siyah erkeklerin hala birçok işyerinde aynı meslekte çalışan beyaz erkeklerden daha düşük bir ücret aldığını istatistikler birçok kez göstermiştir.Bunun yanı sıra gelirdeki farklılıklar ırksal eğitim eşitsizliği ile de doğru orantılı.Örneğin ABD'deki istatistiklere göre beyaz ailelerin %39'u lisans eğitimi veya yüksek eğitim mezunu iken siyahi ve hispanik ailelerde bu oran %23 ve %17'dir.Irklar arasındaki eğitim durumu farkı iş hayatında daha az ücretle çalışma ya da tercih edilmeme gibi durumlara yol açıyor. @stolzenberg1975education
+ 
+ Sonuç olarak iş gücü piyasasında karşılaştığımız birçok değişken faktör gelirdeki farklılıkların neyden,hangi değişkenlerden kaynaklandığını anlamamıza ve analiz etmemize yardımcı olmaktadır.
 
-Bu bölümde konu ile ilgili olarak okuduğunuz makaleleri referans vererek tartışınız. **Her makaleyi ayrı başlık altında tek tek özetlemeyiniz.** Literatür taramasında **en az altı** makaleye atıf yapılması ve bu makalelerden **en az ikisinin İngilizce** olması gerekmektedir.
 
 # Veri 
 Bu bölümde çalışmanızda kullandığınız veri setinin kaynağını, ham veri üzerinde herhangi bir işlem yaptıysanız bu işlemleri ve veri seti ile ilgili özet istatistikleri tartışınız. Bu bölümde tüm değişkenlere ait özet istatistikleri (ortalama, standart sapma, minimum, maksimum, vb. değerleri) içeren bir tablo (Tablo \ref{tab:ozet}) olması zorunludur. Tablolarınıza gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız. [@perkins:1991]
 
 Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'a aktaran ve özet istatistikleri üreten kodlar yer almalıdır.
 
-```{r}
+```{r echo=FALSE}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("../data/survey.csv"))
+library(readr)
+adult_data <- read_csv(here("C:/Users/basak/OneDrive/Masaüstü/Finalodevii/data/AnyConv.com__adult.data.csv"))
 ```
 
-Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
+ 
 
-```{r, echo=FALSE}
+```{r echo=FALSE}
 library(xtable) 
 # devtools::install_github("emraher/summarytools")
 library(summarytools)
 st_options(lang = "tr")
 ```
 
-`echo=FALSE` seçeneği ile kodların türetilen pdf dosyasında görünmesini engelleyin ve sonuçlarınızı tablo halinde rapor edin.
 
-```{r results='asis', echo=FALSE}
-survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+
+```{r echo=FALSE, results='asis'}
+adult_data %>%
+  select("Age", "race", "capital gain", "hours per week", "sex") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Özet İstatistikler",
          label = "tab:ozet",
