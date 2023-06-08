@@ -83,7 +83,7 @@ st_options(lang = "tr")
 
 ```{r echo=FALSE, results='asis'}
 adult_data %>%
-  select("Age", "race", "capital gain", "hours per week", "sex") %>% 
+  select("capital gain", "hours per week", "race", "sex", "yearly income") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Özet İstatistikler",
          label = "tab:ozet",
@@ -104,9 +104,9 @@ $$
 Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. Çalışmanıza uygun biçimde histogram, nokta grafiği (Şekil \@ref(fig:plot) gibi), kutu grafiği, vb. grafikleri bu bölüme ekleyiniz. Şekillerinize de gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız.
 
 
-```{r plot, fig.align='center', fig.cap='Muhteşem Bir Grafik'}
+```{r plot, fig.align='center', fig.cap='Muhteşem Bir Grafik}
 adult_data%>% 
-  ggplot(aes(x = `Age`, y = `yearly income`)) +
+  ggplot(aes(x = Age, y = `yearly income`)) +
   geom_point() +
   geom_smooth() +
   scale_x_continuous("age") + 
